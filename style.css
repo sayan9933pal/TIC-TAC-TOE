@@ -1,33 +1,29 @@
+
 * {
     margin: 0;
     padding: 0;
-
 }
-body{
-    /* background-color: #B7E3FB; */
+body {
     text-align: center;
     background-image: url("2.webp");
     background-size: cover;
-    
+    background-repeat: no-repeat;
 }
-h1{
+h1 {
     color: #fff;
     background-color: black;
     padding: 2px;
-    margin-left: 670px;
-    margin-right: 670px;
+    margin: 0 auto;
+    width: 50%;
     text-align: center;
 }
-.container{
+.container {
     height: 72vh;
     display: flex;
-   
     justify-content: center;
     align-items: center;
-    
-    
 }
-.game{
+.game {
     height: 61vmin;
     width: 61vmin;
     display: flex;
@@ -35,44 +31,89 @@ h1{
     justify-content: center;
     align-items: center;
     gap: 1.2vmin;
-    
 }
-.box{
+.box {
     height: 19vmin;
     width: 19vmin;
     border-radius: 1rem;
     border: none;
-    box-shadow:0 0 1rem rgba(0,0,0.3) ;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
     font-size: 8vmin;
-    color:#560040;
+    color: #560040;
     background-color: #DDA98E;
 }
-#reset-btn{
+#reset-btn, #new-btn {
     padding: 1rem;
     font-size: 1.25rem;
-     background-color: #191913;
-     color: #fff;
-     border-radius: 1rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    margin: 0.5rem;
 }
-#new-btn{
-    padding: 1rem;
-    font-size: 1.25rem;
-     background-color: #191913;
-     color: #fff;
-     border-radius: 1rem;
-}
-#msg{
-    
+#msg {
     font-size: 5vmin;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.msg-container{
+.msg-container {
     height: 20vmin;
 }
-.hide{
+.hide {
     display: none;
     color: #fff;
 }
-h2{
+h2 {
     color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+        width: 70%;
+    }
+    .container {
+        height: auto;
+        padding: 1rem;
+    }
+    .game {
+        height: 80vmin;
+        width: 80vmin;
+        gap: 1vmin;
+    }
+    .box {
+        height: 22vmin;
+        width: 22vmin;
+        font-size: 6vmin;
+    }
+    #msg {
+        font-size: 4vmin;
+    }
+    #reset-btn, #new-btn {
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.25rem;
+        width: 90%;
+    }
+    .game {
+        height: 100vmin;
+        width: 100vmin;
+        gap: 0.5vmin;
+    }
+    .box {
+        height: 25vmin;
+        width: 25vmin;
+        font-size: 4.5vmin;
+    }
+    #msg {
+        font-size: 3.5vmin;
+    }
+    #reset-btn, #new-btn {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
 }
